@@ -6,10 +6,12 @@ This assignment consists of the following files:
 * plot2.R
 * plot3.R
 * plot4.R
-* figures/plot1.png
-* figures/plot2.png
-* figures/plot3.png
-* figures/plot4.png
+* plot1.png
+* plot2.png
+* plot3.png
+* plot4.png
+
+IGNORE ALL THE IMAGES IN THE figure folder.
 
 ## Assumptions
 All the .R files assume that the input file household_power_consumption.txt is present in the same location as the file. 
