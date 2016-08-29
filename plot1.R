@@ -19,8 +19,6 @@ hist(pow$Global_active_power, main = "Global Active Power",
      col = "red", xlab = "Global Active Power (kilowatts)")
 
 # Copying histogram output to file
-if(!dir.exists("./figures")) {
-  dir.create("./figures")
-}
-dev.copy(png, filename = "./figures/plot1.png", width = 480, height = 480, units = "px")
+dev.copy(png, filename = "plot1.png", width = 480, height = 480, 
+         units = "px", bg = "transparent")
 dev.off()

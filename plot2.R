@@ -21,8 +21,6 @@ with(pow,
           ylab = "Global Active Power (kilowatts)", xlab = ""))
 
 # Copying plot output to file
-if(!dir.exists("./figures")) {
-  dir.create("./figures")
-}
-dev.copy(png, filename = "./figures/plot2.png", width = 480, height = 480, units = "px")
+dev.copy(png, filename = "plot2.png", width = 480, height = 480, 
+         units = "px", bg = "transparent")
 dev.off()

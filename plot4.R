@@ -42,7 +42,7 @@ lines(y = pow$Sub_metering_3, x = datetime, type = "s", col = "blue")
 legend("topright", 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col = c("black", "red", "blue"), 
-       lty =1, lwd =1, bty = "n", inset = 0.11, cex = 0.7)
+       lty =1, lwd =1, bty = "n", inset = c(0.11,0), cex = 0.7)
 
 
 # Plotting graph 4
@@ -51,8 +51,6 @@ with(pow,
           Global_reactive_power, type = "s"))
 
 # Copying plot output to file
-if(!dir.exists("./figures")) {
-  dir.create("./figures")
-}
-dev.copy(png, filename = "./figures/plot4.png", width = 480, height = 480, units = "px")
+dev.copy(png, filename = "plot4.png", width = 480, height = 480, 
+         units = "px", bg = "transparent")
 dev.off()

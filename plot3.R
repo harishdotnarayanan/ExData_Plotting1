@@ -31,11 +31,9 @@ lines(y = pow$Sub_metering_3, x = datetime, type = "s", col = "blue")
 legend("topright", 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
        col = c("black", "red", "blue"), 
-       lty =1, lwd =1)
+       lty =1, lwd =1, bty = "o", inset = c(0.05,0), cex = 0.7)
 
 # Copying plot output to file
-if(!dir.exists("./figures")) {
-  dir.create("./figures")
-}
-dev.copy(png, filename = "./figures/plot3.png", width = 480, height = 480, units = "px")
+dev.copy(png, filename = "plot3.png", width = 480, height = 480, 
+         units = "px", bg = "transparent")
 dev.off()
