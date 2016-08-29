@@ -17,4 +17,4 @@ IGNORE ALL THE IMAGES IN THE figure folder.
 All the .R files assume that the input file household_power_consumption.txt is present in the same location as the file. 
 
 ## Execution
-On running the script, the corresponding png file is created (e.g. plot1.R creates plot1.png and so on). All png files are created in a folder called “figures”
+On running the script, the corresponding png file is created (e.g. plot1.R creates plot1.png and so on). All png files are created in the same folder as the R scripts.
